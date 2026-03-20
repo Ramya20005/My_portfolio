@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ramya V — Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <span class="nav-logo">Ramya V</span>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about" onclick="closeMenu()">About</a></li>
+      <li><a href="#education" onclick="closeMenu()">Education</a></li>
+      <li><a href="#projects" onclick="closeMenu()">Projects</a></li>
+      <li><a href="#experience" onclick="closeMenu()">Experience</a></li>
+      <li><a href="#achievements" onclick="closeMenu()">Awards</a></li>
+      <li><a href="#certifications" onclick="closeMenu()">Certifications</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- HOME -->
+  <section id="home">
+    <div class="home-inner">
+      <div class="hero-left">
+        <div class="hero-greeting">AI &amp; Data Science Student</div>
+        <h1 class="hero-headline">Hello, I'm<br/><em>Ramya V</em></h1>
+        <p class="hero-sub">Motivated engineer pursuing B.Tech in Artificial Intelligence &amp; Data Science at KIOT. Passionate about Java development and building impactful AI-powered solutions.</p>
+        <div class="hero-socials">
+          <a href="https://www.linkedin.com/in/ramya-v-745780290" target="_blank" class="social-link">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="https://github.com/Ramya20005" target="_blank" class="social-link">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+          </a>
+          <a href="mailto:vramya28112005@gmail.com" class="social-link tooltip-wrap"><span class="tooltip-text">vramya28112005@gmail.com</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          </a>
+          <a href="tel:+919345344858" class="social-link tooltip-wrap"><span class="tooltip-text">+91 9345344858</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.06 6.06l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item"><div class="stat-num">8.39</div><div class="stat-label">CGPA · Sem 5</div></div>
+          <div class="stat-item"><div class="stat-num">3</div><div class="stat-label">Projects</div></div>
+          <div class="stat-item"><div class="stat-num">2</div><div class="stat-label">Internships</div></div>
+          <div class="stat-item"><div class="stat-num">3</div><div class="stat-label">Awards</div></div>
+        </div>
+        <div class="hero-btns">
+          <button class="btn btn-filled" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Get In Touch</button>
+          <a href="assets/resume.pdf" download="Ramya_V_Resume.pdf" class="btn btn-outline resume-icon-btn"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg> Resume</a>
+        </div>
+      </div>
+      <div class="hero-photo-col">
+        <div class="photo-ring-outer">
+          <div class="photo-ring-inner">
+            <img src="assets/profile.jpg" alt="Ramya V"/>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="section-inner">
+      <div class="sec-header">
+        <div class="sec-label">01 — About Me</div>
+        <div class="sec-title">Who <em>I Am</em></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>I'm <strong>Ramya V</strong>, a third-year B.Tech student specialising in <strong>Artificial Intelligence and Data Science</strong> at Knowledge Institute of Technology, Tamil Nadu.</p>
+          <p>My goal is to build a career as a <strong>Java Developer</strong>, combining strong programming fundamentals with hands-on experience in full-stack development and data science workflows.</p>
+          <p>I enjoy solving real-world problems — from sports booking systems to AI-powered food allocation platforms — and thrive in fast-paced, collaborative environments.</p>
+        </div>
+        <div class="skills-panel reveal">
+          <div class="skill-cat">
+            <div class="skill-cat-name">Programming Languages</div>
+            <div class="skill-pills"><span class="pill">Java</span><span class="pill">OOP</span><span class="pill">DSA</span><span class="pill">C</span></div>
+          </div>
+          <div class="skill-cat">
+            <div class="skill-cat-name">Web Technologies</div>
+            <div class="skill-pills"><span class="pill">HTML</span><span class="pill">CSS</span><span class="pill">JavaScript</span></div>
+          </div>
+          <div class="skill-cat">
+            <div class="skill-cat-name">Tools &amp; Platforms</div>
+            <div class="skill-pills"><span class="pill">Git</span><span class="pill">GitHub</span><span class="pill">VS Code</span><span class="pill">MySQL</span></div>
+          </div>
+          <div class="skill-cat">
+            <div class="skill-cat-name">Soft Skills</div>
+            <div class="skill-pills"><span class="pill">Problem-Solving</span><span class="pill">Teamwork</span><span class="pill">Communication</span><span class="pill">Adaptability</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education" class="alt-bg">
+    <div class="section-inner">
+      <div class="sec-header">
+        <div class="sec-label">02 — Education</div>
+        <div class="sec-title">Academic <em>Journey</em></div>
+      </div>
+      <div class="edu-grid">
+        <div class="edu-card reveal">
+          <div class="edu-year">2023 – 2027</div>
+          <div class="edu-school">Knowledge Institute Of Technology</div>
+          <div class="edu-degree">B.Tech — Artificial Intelligence and Data Science</div>
+          <span class="edu-score">CGPA 8.39 · Sem 5</span>
+        </div>
+        <div class="edu-card reveal">
+          <div class="edu-year">2021 – 2023</div>
+          <div class="edu-school">Govt Girls Higher Secondary School</div>
+          <div class="edu-degree">HSC — Class XII</div>
+          <span class="edu-score">87.83%</span>
+        </div>
+        <div class="edu-card reveal">
+          <div class="edu-year">2020 – 2021</div>
+          <div class="edu-school">Govt High School</div>
+          <div class="edu-degree">SSLC — Class X</div>
+          <span class="edu-score">100%</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="section-inner">
+      <div class="sec-header">
+        <div class="sec-label">03 — Projects</div>
+        <div class="sec-title">My <em>Work</em></div>
+      </div>
+      <div class="projects-grid">
+          <a href="https://sport-court-booking-system.vercel.app/" target="_blank" class="proj-card reveal" style="text-decoration:none;color:inherit;display:block;">
+          <div class="proj-num">01</div>
+          <div class="proj-name">Sports Court Booking System</div>
+          <p class="proj-desc">Real-time court booking with secure authentication, slot availability, cancellation flows, and schedule management through a clean interface.</p>
+          <span class="proj-btn">View Project →</span>
+        </a>
+        <a href="https://food-delivery-o1hi.vercel.app/" target="_blank" class="proj-card reveal" style="text-decoration:none;color:inherit;display:block;">
+          <div class="proj-num">02</div>
+          <div class="proj-name">Tomato Delivery App</div>
+          <p class="proj-desc">A delivery application with order placement, real-time tracking, and live delivery status updates — simple and intuitive UI.</p>
+          <span class="proj-btn">View Project →</span>
+        </a>
+        <a href="https://ai-based-intelligent-surplus-food-a.vercel.app/" target="_blank" class="proj-card reveal" style="text-decoration:none;color:inherit;display:block;">
+          <div class="proj-num">03</div>
+          <div class="proj-name">AI-Based Surplus Food Allocation System</div>
+          <p class="proj-desc">Role-based web app where donors add food, AI predicts safety (Safe/Unsafe), and NGOs request food via a smart allocation engine with real-time updates.</p>
+          <span class="proj-btn">View Project →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="alt-bg">
+    <div class="section-inner">
+      <div class="sec-header">
+        <div class="sec-label">04 — Experience</div>
+        <div class="sec-title">Internship <em>Experience</em></div>
+      </div>
+      <div class="exp-grid">
+        <div class="exp-card reveal" onclick="openExp(0)" style="cursor:pointer;">
+          <div class="exp-role">Java Full Stack Development Intern</div>
+          <div class="exp-company">Dev Technology Solutions</div>
+          <p class="exp-desc">Completed hands-on training in full-stack development covering frontend technologies, backend architecture, and database design.</p>
+          <span class="ach-view">Click to view certificate →</span>
+        </div>
+        <div class="exp-card reveal" onclick="openExp(1)" style="cursor:pointer;">
+          <div class="exp-role">Data Science Intern</div>
+          <div class="exp-company">Codsoft</div>
+          <p class="exp-desc">Gained practical experience in data analysis, feature engineering, model building, and end-to-end data science workflows.</p>
+          <span class="ach-view">Click to view certificate →</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACHIEVEMENTS -->
+  <section id="achievements">
+    <div class="section-inner">
+      <div class="sec-header">
+        <div class="sec-label">05 — Awards</div>
+        <div class="sec-title">My <em>Achievements</em></div>
+      </div>
+      <div class="ach-grid">
+        <div class="ach-card reveal" onclick="openAch(0)">
+          <div class="ach-icon">🥈</div>
+          <div>
+            <div class="ach-title">Campus Coders League — 2nd Prize</div>
+            <p class="ach-desc">Won 2nd place in a 12-hour coding competition at KIOT focused on programming and problem-solving.</p>
+            <span class="ach-view">Click to view details →</span>
+          </div>
+        </div>
+        <div class="ach-card reveal" onclick="openAch(1)">
+          <div class="ach-icon">🏆</div>
+          <div>
+            <div class="ach-title">Best Paper Award — International Conference 2025</div>
+            <p class="ach-desc">Presented research on RAG-based AI for judicial decision support and received the Best Paper Award.</p>
+            <span class="ach-view">Click to view details →</span>
+          </div>
+        </div>
+        <div class="ach-card reveal" onclick="openAch(2)">
+          <div class="ach-icon">🌟</div>
+          <div>
+            <div class="ach-title">KIOT Achievers Award 2025–26</div>
+            <p class="ach-desc">Secured 2nd Place in CCL 12 Hours Coding Challenge and received the KIOT Achievers Award from Knowledge Institute of Technology, Salem.</p>
+            <span class="ach-view">Click to view details →</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section id="certifications" class="alt-bg">
+    <div class="section-inner">
+      <div class="sec-header">
+        <div class="sec-label">06 — Certifications</div>
+        <div class="sec-title">My <em>Certifications</em></div>
+      </div>
+      <div class="cert-list">
+        <div class="cert-item reveal" onclick="openCert()" style="cursor:pointer;"><div class="cert-dot"></div><span class="cert-name">Java, Python, C++ — Tech Trio</span><span class="cert-issuer">Cybernaut</span><span class="ach-view" style="margin-left:1rem;">View →</span></div>
+        <div class="cert-item reveal" onclick="openNptel1()" style="cursor:pointer;"><div class="cert-dot"></div><span class="cert-name">Introduction to Industry 4.0 and Industrial Internet of Things</span><span class="cert-issuer">NPTEL</span><span class="ach-view" style="margin-left:1rem;">View →</span></div>
+        <div class="cert-item reveal" onclick="openNptel2()" style="cursor:pointer;"><div class="cert-dot"></div><span class="cert-name">Business Intelligence &amp; Analytics</span><span class="cert-issuer">NPTEL</span><span class="ach-view" style="margin-left:1rem;">View →</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact">
+    <div class="section-inner">
+      <div class="contact-two-col">
+        <!-- LEFT: Info -->
+        <div class="contact-left">
+          <div class="sec-label">07 — Contact</div>
+          <div class="sec-title" style="margin-bottom:1rem;">Get In <em>Touch</em></div>
+          <p class="contact-intro">Feel free to reach out for opportunities, collaborations, or just to say hello! I'm always open to connecting.</p>
+          <div class="contact-simple-list">
+            <div class="contact-simple-item">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              <a href="mailto:vramya28112005@gmail.com">vramya28112005@gmail.com</a>
+            </div>
+            <div class="contact-simple-item">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.06 6.06l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <a href="tel:+919345344858">+91 9345344858</a>
+            </div>
+            <div class="contact-simple-item">
+              <a href="https://www.linkedin.com/in/ramya-v-745780290" target="_blank" class="contact-icon-only">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              </a>
+              <a href="https://github.com/Ramya20005" target="_blank" class="contact-icon-only">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- RIGHT: Contact Form look -->
+        <div class="contact-right">
+          <div class="contact-form-box">
+            <div class="contact-form-title">Send a Message</div>
+            <div class="contact-form-field">
+              <label>Name</label>
+              <input type="text" placeholder="Your Name" id="cName"/>
+            </div>
+            <div class="contact-form-field">
+              <label>Email</label>
+              <input type="email" placeholder="your@email.com" id="cEmail"/>
+            </div>
+            <div class="contact-form-field">
+              <label>Message</label>
+              <textarea placeholder="Write your message..." id="cMsg" rows="4"></textarea>
+            </div>
+            <button class="contact-send-btn" onclick="sendMsg()">Send Message →</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-contact">
+      <div class="footer-contact-item"><span>✉</span> vramya28112005@gmail.com</div>
+      <div class="footer-contact-item"><span>☏</span> +91 9345344858</div>
+      <div class="footer-contact-item"><span>◈</span> English · Tamil</div>
+      <div class="footer-contact-item"><span>📍</span> Tamil Nadu, India</div>
+    </div>
+    <p>© 2025 <span>Ramya V</span> — All Rights Reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+  <!-- CONTACT MODAL -->
+  <div class="modal-overlay" id="contactModal" onclick="closeContact()">
+    <div class="modal-box" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="closeContact()">✕</button>
+      <div class="modal-label">Get In Touch</div>
+      <h2 class="modal-title">Let's <em>Connect</em></h2>
+      <p class="modal-sub">Feel free to reach out for opportunities, collaborations, or just a hello!</p>
+      <div class="modal-items">
+        <a href="mailto:vramya28112005@gmail.com" class="modal-item">
+          <div class="modal-icon">✉</div>
+          <div>
+            <div class="modal-item-label">Email</div>
+            <div class="modal-item-value">vramya28112005@gmail.com</div>
+          </div>
+        </a>
+        <a href="tel:+919345344858" class="modal-item">
+          <div class="modal-icon">☏</div>
+          <div>
+            <div class="modal-item-label">Phone</div>
+            <div class="modal-item-value">+91 9345344858</div>
+          </div>
+        </a>
+        <div class="modal-item">
+          <div class="modal-icon">◈</div>
+          <div>
+            <div class="modal-item-label">Languages</div>
+            <div class="modal-item-value">English · Tamil</div>
+          </div>
+        </div>
+        <div class="modal-item">
+          <div class="modal-icon">📍</div>
+          <div>
+            <div class="modal-item-label">Location</div>
+            <div class="modal-item-value">Tamil Nadu, India</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ACHIEVEMENT MODAL -->
+  <div class="modal-overlay" id="achModal" onclick="closeAch()">
+    <div class="modal-box ach-modal-box" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="closeAch()">✕</button>
+      <div class="ach-modal-icon" id="achModalIcon"></div>
+      <div class="modal-label" id="achModalLabel"></div>
+      <h2 class="modal-title" id="achModalTitle"></h2>
+      <div class="ach-modal-img-wrap">
+        <div class="ach-modal-img-placeholder" id="achModalImg"></div>
+      </div>
+      <p class="modal-sub" id="achModalDesc"></p>
+    </div>
+  </div>
+
+  <!-- EXPERIENCE MODAL -->
+  <div class="modal-overlay" id="expModal" onclick="closeExp()">
+    <div class="modal-box" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="closeExp()">✕</button>
+      <div class="modal-label" id="expModalLabel"></div>
+      <h2 class="modal-title" id="expModalTitle"></h2>
+      <p class="modal-sub" id="expModalSub"></p>
+      <div class="ach-modal-img-wrap">
+        <div class="ach-modal-img-placeholder" id="expModalImg"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CERT MODAL -->
+  <div class="modal-overlay" id="certModal" onclick="closeCert()">
+    <div class="modal-box" onclick="event.stopPropagation()" style="max-width:600px;">
+      <button class="modal-close" onclick="closeCert()">✕</button>
+      <div class="modal-label">Cybernaut — Tech Trio</div>
+      <h2 class="modal-title">Java, Python & <em>C++</em></h2>
+      <div class="cert-imgs-grid" id="certImgsGrid"></div>
+    </div>
+  </div>
+</body>
+</html>
